@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Draken";
+  src: url("/fonts/DrakenRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply font-draken bg-bg-color;
+}
+
+.main-container {
+  @apply min-h-[100vh] w-[100vw];
+}
+
+h1 {
+  @apply text-text-color font-extrabold text-lg hmd:text-xl;
+}
